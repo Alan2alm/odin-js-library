@@ -22,6 +22,7 @@ newBookBtn.addEventListener("click", function(event) {
 });
 
 addBookBtn.addEventListener("click", function(event) {
+    event.preventDefault();
     addBookToLibrary();
     newBookForm.style.display = "none";
     tableHead.style.display = "table-header-group";
